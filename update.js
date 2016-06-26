@@ -19,7 +19,7 @@ router.put('/products/:id', function (req, res) {
             return;
         }
 
-        for (var i = 1; i < data.length; i++) {
+        for (var i = 0; i < data.length; i++) {
             if (parseInt(req.params.id) === data[i].id) {
                 data[i] = item;
             }

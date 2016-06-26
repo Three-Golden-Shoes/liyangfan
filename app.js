@@ -34,5 +34,9 @@ app.use('/', insert);
 app.use('/', remove);
 app.use('/', update);
 
-var server = app.listen(8000);
+var server = app.listen(8000, function(){
+    var port = server.address().port;
+    console.log("listen on %s",port);
+});
+
 

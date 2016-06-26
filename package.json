@@ -1,0 +1,22 @@
+{
+  "name": "liyangfan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Three-Golden-Shoes/liyangfan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Three-Golden-Shoes/liyangfan/issues"
+  },
+  "homepage": "https://github.com/Three-Golden-Shoes/liyangfan#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

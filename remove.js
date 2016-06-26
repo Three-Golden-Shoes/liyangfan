@@ -2,7 +2,6 @@ var express = require('express');
 var router = express();
 var fs = require("fs");
 
-//删除
 router.delete('/products/:id', function (req, res) {
     fs.readFile('test.json', 'utf8', function (err, data) {
 
@@ -13,7 +12,7 @@ router.delete('/products/:id', function (req, res) {
             return;
         }
 
-        for (var i = 1; i < data.length; i++) {
+        for (var i = 0; i < data.length; i++) {
             if (parseInt(req.params.id) === data[i].id) {
                 data.splice(i, 1);
             }

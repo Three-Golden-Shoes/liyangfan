@@ -14,7 +14,6 @@ router.get('/products', function (req, res) {
             res.status(404).send('[]');
         } else {
             data = JSON.parse(data);
-            data.splice(0, 1);
         }
         res.status(200).json(data);
     });
